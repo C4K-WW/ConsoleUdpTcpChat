@@ -1,0 +1,212 @@
+                                                                                            body {
+                                                                                            background-color: #85d998;
+                                                                                        }
+                                                                                        
+                                                                                        input {
+                                                                                            /*width: 100%;*/
+                                                                                            margin-top: 1%;
+                                                                                        }
+                                                                                        
+                                                                                        select {
+                                                                                            margin-left: 1%;
+                                                                                            margin-top: 1%;
+                                                                                        }
+                                                                                        
+                                                                                        button {
+                                                                                            background-color: white;
+                                                                                            border: silver 1px solid;
+                                                                                            padding: 5px 15px 5px 15px;
+                                                                                            margin-top: 5%;
+                                                                                            color: green;
+                                                                                        }
+                                                                                        
+                                                                                        button:hover {
+                                                                                            background-color: #32b932;
+                                                                                            color: white;
+                                                                                            cursor: pointer;
+                                                                                        }
+                                                                                        
+                                                                                        a:hover {
+                                                                                            color: white;
+                                                                                            text-decoration: none;
+                                                                                        }
+                                                                                        
+                                                                                        form {
+                                                                                            float: right;
+                                                                                            padding-right: 10px;
+                                                                                            position: relative;
+                                                                                            top: 15px;
+                                                                                        }
+                                                                                        
+                                                                                        .topBar {
+                                                                                            background-color: #3b8b4d;
+                                                                                            text-align: center;
+                                                                                            height: 75px;
+                                                                                        }
+                                                                                        
+                                                                                        .topBar p {
+                                                                                            color: white;
+                                                                                            font-size: 30px;
+                                                                                            font-weight: 500;
+                                                                                            position: absolute;
+                                                                                            top: 4%;
+                                                                                            left: 50%;
+                                                                                            transform: translate(-50%, -50%);
+                                                                                        }
+                                                                                        
+                                                                                        .login-btn {
+                                                                                            color: white;
+                                                                                            text-decoration: none;
+                                                                                            padding: 1px 5px 1px 5px;
+                                                                                        }
+                                                                                        
+                                                                                        .reg input {
+                                                                                            text-align: center;
+                                                                                            width: 50%;
+                                                                                            border-radius: 10px;
+                                                                                        }
+                                                                                        
+                                                                                        .lastInput {
+                                                                                            width: 10%
+                                                                                        }
+                                                                                        
+                                                                                        .lastSelect {
+                                                                                            width: 10%;
+                                                                                        }
+                                                                                        
+                                                                                        .turnOff {
+                                                                                            position: relative;
+                                                                                            top: 13px;
+                                                                                            left: 10px;
+                                                                                            color: red;
+                                                                                        }
+                                                                                        
+                                                                                        .space {
+                                                                                            position: relative;
+                                                                                            top: 13px;
+                                                                                            padding: 0px 5px 0px 5px;
+                                                                                        }
+                                                                                        
+                                                                                        .rows {
+                                                                                            border: 1px solid black;
+                                                                                            margin-top: 3%;
+                                                                                            padding: 3% 0% 3% 0%;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .rows p {
+                                                                                            display: inline;
+                                                                                        }
+                                                                                        
+                                                                                        .rows input {
+                                                                                            display: inline;
+                                                                                        }
+                                                                                        
+                                                                                        .rows option {
+                                                                                            display: inline;
+                                                                                        }
+                                                                                        
+                                                                                        .download {
+                                                                                            background-color: #32b932;
+                                                                                            border: silver 1px solid;
+                                                                                            padding: 5px 15px 5px 15px;
+                                                                                            margin-top: 5%;
+                                                                                            color: white;
+                                                                                            cursor: pointer;
+                                                                                        }
+                                                                                        
+                                                                                        .display-field {
+                                                                                            background-color: #ffffff;
+                                                                                            height: 100%;
+                                                                                            width: 65%;
+                                                                                            z-index: 1;
+                                                                                            position: relative;
+                                                                                            left: 40px;
+                                                                                            top: -15px;
+                                                                                            display: none;
+                                                                                            transition: 2s;
+                                                                                            border-radius: 10px;
+                                                                                        }
+                                                                                        
+                                                                                        .imgBorder:hover {
+                                                                                            border: 3px solid yellow;
+                                                                                        }
+                                                                                        
+                                                                                        .logOutBtn {
+                                                                                            background: none;
+                                                                                            color: white;
+                                                                                            border: none;
+                                                                                            cursor: pointer;
+                                                                                        }
+                                                                                        
+                                                                                        .generate {
+                                                                                            background-color: #696fed;
+                                                                                            border: silver 1px solid;
+                                                                                            padding: 5px 15px 5px 15px;
+                                                                                            margin-top: 5%;
+                                                                                            color: white;
+                                                                                        }
+                                                                                        
+                                                                                        .generate:hover {
+                                                                                            cursor: pointer;
+                                                                                            background-color: #32b932;
+                                                                                            color: white;
+                                                                                        }
+                                                                                        
+                                                                                        .buttom-line {
+                                                                                            position: fixed;
+                                                                                            bottom: 0px;
+                                                                                            height: 25px;
+                                                                                            background-color: #3b8b4d;
+                                                                                        }
+                                                                                        
+                                                                                        .copyRight {
+                                                                                            color: white;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .detailsbtn:hover {
+                                                                                            background-color: #32b932;
+                                                                                            color: white;
+                                                                                            cursor: pointer;
+                                                                                        }
+                                                                                        
+                                                                                        .mydiv {
+                                                                                            position: absolute;
+                                                                                            z-index: 9;
+                                                                                            background-color: #f1f1f1;
+                                                                                            border: 1px solid #d3d3d3;
+                                                                                            text-align: center;
+                                                                                            display: none;
+                                                                                        }
+                                                                                        
+                                                                                        .mydivheader {
+                                                                                            padding: 10px;
+                                                                                            cursor: move;
+                                                                                            z-index: 10;
+                                                                                            background-color: #2196F3;
+                                                                                            color: #fff;
+                                                                                        }
+                                                                                        
+                                                                                        .show {
+                                                                                            height: 130px;
+                                                                                            width: 600px;
+                                                                                        }
+                                                                                        /*-=-= Media Querie s=-=-=-*/
+                                                                                        
+                                                                                        @media screen and (max-width: 1465px) and (min-width: 800px) {
+                                                                                            .topBar p {
+                                                                                                color: white;
+                                                                                                font-size: 30px;
+                                                                                                font-weight: 500;
+                                                                                                position: absolute;
+                                                                                                top: 4%;
+                                                                                                left: 15%;
+                                                                                                transform: translate(-50%, -50%);
+                                                                                            }
+                                                                                        }
+                                                                                        
+                                                                                        @media screen and (max-width: 860px) {
+                                                                                            .topBar p {
+                                                                                                display: none;
+                                                                                            }

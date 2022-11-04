@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SQL GENERATOR</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+    <div class="container-fluid" style="padding: 0px;">
+        <div class="topBar">
+            <p style="text-shadow: 4px 2px black;
+            border: 1px solid black;
+            padding: 7px;
+            border-radius: 25%;
+            box-shadow: inset -3px -2px 20px 0px black;">SQL GENERATOR</p>
+            <div class="login-container">
+
+
+                <form action="/index" method="POST">
+
+                    <img onclick="img()" class="imgBorder" style="width: 50px;
+                    border-radius: 42%;" src='<%=icon%>' alt="">
+                    <span style="color: blueviolet;">W</span>
+                    <span style="color: crimson;">e</span>
+                    <span style="color:#044814;">l</span>
+                    <span style="color: darkred;">c</span>
+                    <span style="color: darksalmon;">o</span>
+                    <span style="color: darkslateblue;">m</span>
+                    <span style="color: deeppink;">e</span>
+                    <span>,</span>
+                    <span class="none"><%=name%>!</span>
+                    <input class="logOutBtn" type="submit" value="LogOut" onclick="logout()" />
+                    <span id="img-info" style="border: 1px solid black;
+                     position: absolute;
+    top: 54px;
+    left: 7px;
+    z-index: 1;
+    background: white;
+    padding: 5px;display: none;"><span>Name: 
+                                         <%=name%>,</br></span><span>Email:
+                                            <%=email%>,</br></span> <span>Register Date:
+                                                <%=regdate%>,</br></span> <span>Visited date:
+                                                    <%=lastvisit%>,</br>
+
+                                                </span> <span>Total Downloads:
+                                                    <%=totaldownload%></br></span>
+
+                    <span><a class="detailsbtn" style="
+                    border: silver 1px solid;
+                    padding: 5px 15px 5px 15px;
+                    
+                    "href="/changepwd">Change Details</a><span></span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div id="mainCont" class="col-12">
+                <div style="display: inline;">
+                    <p>
+                        <!-- Name:
+                        <%=name%>, Email:
+                            <%=email%>, Register Date:
+                                <%=regdate%>, Visited date:
+                                    <%=lastvisit%>, Total Downloads:
+                                        <%=totaldownload%> -->
+                    </p>
+                    <p style="display: inline;">Field Name</p>
+                    <p style="display: inline; position: relative;left: 110px;">Type</p>
+                </div>
+
+
+                <!-- Here I add new field -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4" style="padding: 0px;">
+                <button onclick="addField()">Add another field</button>
+                <button class="generate" onclick="send()">GENERATE</button>
+                <span id="add-field" class="display-field"></span>
+                <div id="msg-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="row" style="float: right;">
+                <div id="mydiv" class="mydiv" style="position: fixed;
+                top: 76px;
+                left: 753px;">
+                    <div id="mydivheader" class="mydivheader">Click here to move
+                        <a onclick="closeWindow()" href="" style="display: inline;
+                        position: relative;
+                        left: 200px;color: red;text-align: initial;">X</a>
+                    </div>
+                    <p class="show" id="show" style="overflow-x: scroll;overflow-y: scroll;white-space: nowrap;">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 rows">
+                <p>#Rows:</p>
+                <input class="lastInput" type="text" name="rows">
+                <p>Format:</p>
+                <select class="lastSelect" name="options5">
+                        <option value="sql">sql</option>
+                        <option value="txt">txt</option>
+                        <option value="csv">csv</option>
+                        <option value="xml">xml</option>
+                        <option value="JSON">JSON</option>
+					</select>
+                <p>Table Name:</p>
+                <input class="lastInput" type="text" name="table_name">
+                <p>
+                    <input type="checkbox" name="create_table" value="table"> Include create table.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4" style="padding: 0px;">
+                <div id="errormsg"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4" style="padding: 0px;">
+                <a href="http://localhost:4000/download1" class="download" onclick="download()">Download Data</a>
+                <p>
+                    <%=messages.test%>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 buttom-line" style="padding: 0px; margin: 0px;">
+                <p style="color: white; text-align: center;">&copy CopyRight 2022, All rights are reserved. Created foR: Code4000.org</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="listOfData.js"></script>
+
+
+
+</body>
+
+<script type="text/javascript" src="../bootstrap/bootstrap/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../bootstrap/bootstrap/js/jquery-easing.min.js"></script>
+<script type="text/javascript" src="../bootstrap/bootstrap/js/popper.min.js"></script>
+
+
+
+
+</html>
