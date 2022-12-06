@@ -1,0 +1,5 @@
+[11:47:00 AM]lisa:"yes"
+[11:47:01 AM]nick:"slow"
+[1:11:28 PM]nick:"this is a nice work"
+[1:12:08 PM]lisa:"I know bro"
+[12:50:41 PM]nick:"restart"

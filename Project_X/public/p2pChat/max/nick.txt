@@ -1,0 +1,4 @@
+[11:45:20 AM]max:"yes"
+[11:45:23 AM]nick:"slow"
+[12:54:05 PM]nick:"hy max"
+[12:54:17 PM]max:"how are you?"

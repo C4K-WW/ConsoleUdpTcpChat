@@ -1,0 +1,2 @@
+let result = new Array({ name: 'lisa', id: 1, password: '123456' }, { name: 'nick', id: 2, password: '123456' }, { name: 'aron', id: 3, password: '123456' }, { name: 'max', id: 4, password: '123456' }, { name: 'alex', id: 5, password: '123456' });
+module.exports = result;

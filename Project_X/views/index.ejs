@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,36 @@
 </head>
 
 <body>
-    <dev>
-        <p>Income:</p>
-        <textarea name="message" rows="10" cols="40">     </textarea>
-    </dev>
 
-    <dev>
-        <p><input id="send" type="text" name="send" size=40></p>
-        <p><input id="sendNick" type="text" name="sendNick" size=10></p>
-        <button onclick="send()">Send</button>
-    </dev>
+    <div>
+        <p>Msg Output:</p>
+        <textarea name="message" rows="10" cols="40">     </textarea>
+        <p>Users:</p>
+        <textarea name="users" rows="10" cols="10">   </textarea>
+        <p id='name'>Current user:
+            <%=nickname%>
+        </p>
+        <p>Select User/Group name:</p>
+        <p><input id="p2pID" type="text" name="p2pID" size=10></p>
+        <p>Msg Input:</p>
+        <p><input id="p2pSend" type="text" name="p2pSend" size=40></p>
+        <p><button onclick="p2pSendMsg()">Send Msg</button></p>
+
+    </div>
+
+    <div id='panel'>
+        <button onclick="loginPan()">Login Panel</button>
+        <dev id='login'>
+            <!-- login panel area -->
+        </dev>
+    </div>
+
 
 </body>
-<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="pTpSendMsg.js"></script>
+<script type="text/javascript" src="pTpGetMsg.js"></script>
+<script type="text/javascript" src="ChooseUser.js"></script>
+<script type="text/javascript" src="ConnectedUsers.js"></script>
+<script type="text/javascript" src="LoginLogOutPan.js"></script>
 
 </html>
