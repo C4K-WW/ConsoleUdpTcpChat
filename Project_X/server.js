@@ -9,7 +9,7 @@ const logOut = require('./views/routes/logout');
 const flash = require('express-flash');
 const fs = require('fs');
 const { writeFile, readFile } = require('fs').promises;
-
+const { pool } = require('pg');
 
 login(passport);
 app.use(flash());

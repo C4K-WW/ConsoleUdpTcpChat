@@ -4,7 +4,7 @@ let response;
 async function pTpGetMsg() {
     if (name.textContent.toString().slice(26).trim() !== "You are not logged in") { // Get Msg from backend only if you are logged in.
         GetMsgFromID(); // This function is on file "ChooseUser.js".
-        let GetpTpMsg = await fetch('/user/:id');
+        let GetpTpMsg = await fetch('/user/:id'); // I get the 
         res = await GetpTpMsg.json();
         response = res.dbp2p
     } else if (name.textContent.toString().slice(26).trim() === "You are not logged in") { // Otherwise display to "Msg Output:" that you are not logged in.
